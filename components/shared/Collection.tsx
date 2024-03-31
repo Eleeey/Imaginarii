@@ -1,6 +1,9 @@
 "use client";
 
-
+import Image from "next/image";
+import Link from "next/link";
+import { useSearchParams, useRouter } from "next/navigation";
+import { CldImage } from "next-cloudinary";
 
 import {
   Pagination,
@@ -15,10 +18,6 @@ import { formUrlQuery } from "@/lib/utils";
 import { Button } from "../ui/button";
 
 import { Search } from "./Search";
-import { Link } from "lucide-react";
-import { CldImage } from "next-cloudinary";
-import { useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
 
 export const Collection = ({
   hasSearch = false,
